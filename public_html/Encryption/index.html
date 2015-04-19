@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vigenere Cipher</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="vigenere.js"></script>
+    </head>
+    <body>
+        <label>Enter the Plain Text to encrypt here</label><br/>
+        <textarea id="plain-text"></textarea><br/><br/>
+        <label>Enter the Encryption Key here</label><br/>
+        <textarea id="key"></textarea><br/><br/>
+        <label>Please select all action that the encrypted text should have</label><br/>
+        <label>ALL UPPERCASE</label><input type="checkbox" id="allUpper">
+        <label>NoSpaces</label><input type="checkbox" id="noSpaces"><br/><br/>
+        <button onclick="encrypt()">Encrypt</button><br/><br/>
+        <label id="enc-text-header">The Encrypted Text:</label><br/>
+        <textarea disabled id="enc-text"></textarea>
+    </body>
+</html>
